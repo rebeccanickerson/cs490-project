@@ -74,10 +74,10 @@ public class Plant : MonoBehaviour {
 		flowers.gameObject.tag = "Flower";
 		flowers.gameObject.AddComponent<MeshFilter>();
 		flowers.gameObject.AddComponent<MeshRenderer>();
-		this.iterateInterval = 20; // For testing quickly
-		this.increaseInterval = 10; // this.iterateInterval / 2;
-		//this.iterateInterval = UnityEngine.Random.Range (4500, 100000);
-		//this.increaseInterval = this.iterateInterval / 2;
+		//this.iterateInterval = 20; // For testing quickly
+		//this.increaseInterval = 10; // this.iterateInterval / 2;
+		this.iterateInterval = UnityEngine.Random.Range (4500, 100000);
+		this.increaseInterval = this.iterateInterval / 2;
 	}
 
 	private void GenerateRules() {
